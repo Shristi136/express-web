@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{>headerlinks}}
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/weather favicon.png" type="image/png">
+    <title>Weather app</title>
+</head>
+<body>
+  <div class="frame">
+
+    {{>navbar}}
+
+    <!-- hero section of the page  -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-mid-10 col-12-mx-auto">
+                <div class="row">
+                    <!-- left side  -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to weather app</p>
+                        <h1>I Am A <span>Mern Stack Developer</span>and Freelancer</h1>
+                        <a href="https://github.com/Shristi136"><button class="styled-button">check now</button></a>
+                    </div>
+                     <!-- right side  -->
+                      <div class="col-md-6 col-12 main_header_right ">
+                        <video src="images/mern-stack-dev.mp4" width="400px" height="300px"></video>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>        
+    <!-- ------------>
+
+    {{>footer}}
+    
+  </div>
+
+
+</body>
+</html>

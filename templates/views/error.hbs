@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     {{>headerlinks}}
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/weather favicon.png" type="image/png">
+    <title>Weather app</title>
+</head>
+<body>
+<div class="frame">
+
+    {{>navbar}}
+
+{{!-- error page start  --}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-mid-10 col-12-mx-auto">
+                <div class="row">
+                <picture class="error-img">
+                    <img src="images/error.jpg" alt="error image" width="50%">
+                </picture>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {{!-- ------------ --}}
+
+    {{>footer}}
+
+</div>     
+</body>
+</html>

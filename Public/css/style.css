@@ -1,14 +1,76 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+html{
+  font-size: 62.5%;
+}
+html, body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.frame{
+  /* width: 80vw; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 80%; /* 80% width */
+  margin: 0 10%; /* 10% margin on left and right */
+}
+
 h1{
-    color: red;
+    color:#00B298;
+    font-weight: bolder;
 }
 .left{
     margin-left: 70%;
 }
 .row{
-    justify-content: space-between;
+    padding: 2rem;
+}
+.navbar{
+  padding: 2rem;
+  color:#fff;
+  background-color: #333;
+}
+.navbar a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.navbar a:hover{
+  color: #00B298;
+}
+.navbar-toggler{
+  color: #fff;
+  background-color: #fff;
+}
+.fa-snowflake{
+  transition: all linear;
+  animation: rot 2s linear infinite ;
+}
+@keyframes rot{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.main_header_left{
+  margin: 4rem 0 0 0;
+}
+.main_header_right{
+  text-align: center;
 }
 .img-size{
-    height: 20rem;
+    height: 35rem;
     padding: 2rem;
 }
 
@@ -18,13 +80,11 @@ h1{
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
     bottom: 0;
-    width: 100%;
+    margin-top: auto;
   }
   
   .footer-container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -45,3 +105,40 @@ h1{
   .footer-nav a:hover {
     text-decoration: underline;
   }
+/* button css  */
+.styled-button {
+  background-color: #A4F5EC; /* Green background */
+  border: none; /* Remove borders */
+  color:#365A64;
+  font-weight: bolder;
+  padding: 10px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the container inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Animation */
+}
+
+.styled-button:hover {
+  background-color: #A4F5EC; /* Darker green */
+}
+
+.styled-button:active {
+  background-color: #A4F5EC; /* Even darker green */
+  transform: scale(0.98); /* Slightly smaller */
+}
+
+.styled-button:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 3pt 2pt #A4F5EC; /* Add a shadow */
+}
+
+/* error page  */
+.error-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
