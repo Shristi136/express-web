@@ -142,3 +142,94 @@ h1{
   justify-content: center;
   align-items: center;
 }
+
+/* weather page  */
+/* Search form styles */
+.search-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-form input[type="text"] {
+  width: 50%;
+  padding: 0.5em;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-form button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color:#00B298;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-form button:hover {
+  background-color: #478178;
+}
+
+/* Main content to grow and take available space */
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Weather Info Section */
+.weather-info {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+}
+
+.weather-info h2 {
+  margin-bottom: 1em;
+}
+
+.weather-card {
+  padding: 1em;
+  background-color: #85f3e38c;
+  border-radius: 8px;
+}
+
+.weather-card .location {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.weather-card .temperature {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.weather-card .temp_status {
+  margin-bottom: 1em;
+}
+.fa-cloud{
+  font-size: 2.5rem;
+}
+
+.weather-card .humidity, .day, .forecast{
+  font-size: 1.8rem;
+}
+.top-layer{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     {{>headerlinks}}
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/weather favicon.png" type="image/png">
+    <title>Weather app</title>
+</head>
+<body>
+<div class="frame">
+
+    {{>navbar}}
+
+{{!-- error page start  --}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-mid-10 col-12-mx-auto">
+                {{!-- search bar  --}}
+                <form class="search-form">
+                <input type="text" id="cityName_input" placeholder="Enter your city name..." autocomplete="off">
+                <button type="submit" id="submit">Search</button>
+            </form>
+            {{!-- weather info  --}}
+            <main>
+            <section class="weather-info">
+                <h2>Current Weather</h2>
+                <div class="weather-card">
+                
+                        <p class="day">friday</p>
+
+                    <h3 class="location">City Name</h3>
+                    <p class="temperature"></p>
+                    <p class="forecast"></p>
+                    <p class="temp_status"></p>
+                        <p class="humidity"></p>
+                </div>
+            </section>
+        </main>
+            </div>
+        </div>
+    </div>
+    {{!-- ------------ --}}
+
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+</div>     
+</body>
+</html>

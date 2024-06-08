@@ -20,15 +20,15 @@ app.get("/about",(req,res)=>{
     res.render("about");
 })
 
-app.get("/error",(req,res)=>{
-    res.render("error");
+app.get("/weather",(req,res)=>{
+    res.render("weather");
 })
 
 app.use(express.static(static_path));
 
 
 app.get("*",(req,res)=>{
-    res.status(404);
+    res.status(404).render("error");
 })
 
 app.listen(port,()=>{
